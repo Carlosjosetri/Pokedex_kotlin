@@ -57,6 +57,7 @@ class PokemonAdapter(val items: List<Pokemon>, val context: Context) :
 
             holder.itemView.context.startActivity(intent)
         })
+        holder.itemView.setBackgroundColor(23)
     }
 
 
