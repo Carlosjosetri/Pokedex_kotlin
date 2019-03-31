@@ -3,19 +3,14 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-<LinearLayout android:layout_width="wrap_content"
-              android:layout_height="wrap_content">
+
     <ImageView
             android:id="@+id/img"
             android:layout_width="200dp"
             android:layout_height="150dp"
             android:src="@mipmap/ic_launcher"
-            android:layout_gravity="left
-"
+            android:layout_gravity="center"
 />
-    <LinearLayout android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-    android:orientation="vertical">
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
               android:text="Missingno"
               android:textSize="60dp"
@@ -28,16 +23,15 @@
               android:id="@+id/count"
               android:layout_gravity="center"
     />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Type/s:"
+              android:textSize="40dp"
 
+              android:layout_gravity="center"
+    />
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_gravity="center">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:text="Type/s:  "
-                  android:textSize="40dp"
-
-                  android:layout_gravity="center"
-        />
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                   android:text="p??????"
                   android:textSize="30dp"
@@ -51,8 +45,7 @@
                   android:id="@+id/tipo2"
                   android:layout_gravity="center"
         />
-    </LinearLayout>
-    </LinearLayout>
+
     </LinearLayout>
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
