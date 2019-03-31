@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/labelpoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name" />
+
+            <EditText
+                    android:id="@+id/labelpoke2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/butserach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelpoke"
+                    android:hint="id pokemon"
+                    android:inputType="number"/>
+
+            <Button
+                    android:id="@+id/butserach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/labelpoke2"
+                    android:layout_alignParentRight="true"
+                    android:text="search" />
+
+
+        </RelativeLayout>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/result"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+        </ScrollView>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pokemon_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    android:tag="0"/>
+
+</LinearLayout>
